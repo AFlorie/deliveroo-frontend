@@ -13,20 +13,19 @@ const Section = ({ data, categorie, i, cart, setCart }) => {
             className="section"
             onClick={() => {
               const tab = [...cart];
-              for (let i = 0; i <= tab.length; i++) {
-                if (tab[i].title === meal.title) {
-                  alert("déjà présent");
-                } else {
-                  alert("nouveau produit");
-                }
+              console.log(tab);
+
+              if (cart.lengh === undefined) {
+                tab.push({
+                  id: meal.id,
+                  title: meal.title,
+                  price: meal.price,
+                  quantity: 1,
+                });
+                setCart(tab);
+              } else {
+                alert("deja un objet dans le tableau");
               }
-              // tab.push({
-              //   id: meal.id,
-              //   title: meal.title,
-              //   price: meal.price,
-              //   quantity: 1,
-              // });
-              // setCart(tab);
             }}
           >
             <div>
