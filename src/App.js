@@ -67,7 +67,7 @@ function App() {
                 );
               })}
             </section>
-            <Panier cart={cart} />
+            <Panier cart={cart} setCart={setCart} />
           </div>
         </>
       )}
