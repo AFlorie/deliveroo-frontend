@@ -217,6 +217,22 @@ h3 {
   margin-right: 30px;
 }
 
+.basket .command i {
+  font-size: 20px;
+  color: #00cdbd;
+}
+
+.basket .command i:nth-child(1) {
+  margin-right: 5px;
+}
+
+.basket .command i:nth-child(2) {
+  margin-left: 5px;
+}
+
+.basket .command span:nth-child(2) {
+  padding-left: 5px;
+}
 .detail section {
   color: #2e3333;
   display: flex;

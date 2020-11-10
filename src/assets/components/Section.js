@@ -2,8 +2,8 @@ import React from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const Section = ({ data, categorie, i, cart, setCart }) => {
-  //console.log(cart[0].title);
+const Section = ({ categorie, i, cart, setCart }) => {
+  // console.log(cart);
   return (
     <>
       {categorie.meals.map((meal, index) => {
@@ -13,9 +13,7 @@ const Section = ({ data, categorie, i, cart, setCart }) => {
             className="section"
             onClick={() => {
               const tab = [...cart];
-              console.log(tab);
-
-              if (cart.lengh === undefined) {
+              if (tab.length === 0) {
                 tab.push({
                   id: meal.id,
                   title: meal.title,
@@ -24,7 +22,22 @@ const Section = ({ data, categorie, i, cart, setCart }) => {
                 });
                 setCart(tab);
               } else {
-                alert("deja un objet dans le tableau");
+                let isPresent = false;
+                for (let i = 0; i < tab.length; i++) {
+                  if (tab[i].id === meal.id) {
+                    isPresent = true;
+                    tab[i].quantity = tab[i].quantity + 1;
+                  }
+                }
+                if (isPresent === false) {
+                  tab.push({
+                    id: meal.id,
+                    title: meal.title,
+                    price: meal.price,
+                    quantity: 1,
+                  });
+                }
+                setCart(tab);
               }
             }}
           >

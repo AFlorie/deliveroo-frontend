@@ -1,6 +1,7 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const Panier = ({ cart, setCard }) => {
+const Panier = ({ cart, setCart }) => {
   // console.log(cart);
   return (
     <section className="basket">
@@ -14,7 +15,26 @@ const Panier = ({ cart, setCard }) => {
           return (
             <section key={item.id}>
               <div className="command">
-                <span></span>
+                <span>
+                  <i
+                    onClick={() => {
+                      const tab = [...cart];
+                      //console.log(tab[0]);
+                      for (let i = 0; i < tab.length; i++) {
+                        if (tab[i].id === item.id) {
+                          tab[i].quantity = tab[i].quantity - 1;
+                        }
+                      }
+                      setCart(tab);
+                    }}
+                  >
+                    <FontAwesomeIcon icon="minus-square" />
+                  </i>
+                  {item.quantity}
+                  <i>
+                    <FontAwesomeIcon icon="plus-square" />
+                  </i>
+                </span>
                 <span>{item.title}</span>
                 <span>{item.price.replace(".", ",")} €</span>
               </div>

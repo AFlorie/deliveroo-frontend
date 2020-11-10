@@ -10,8 +10,12 @@ import Panier from "./assets/components/Panier";
 import logo from "./assets/images/deliveroo.png";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faStar } from "@fortawesome/free-solid-svg-icons";
-library.add(faStar);
+import {
+  faStar,
+  faPlusSquare,
+  faMinusSquare,
+} from "@fortawesome/free-solid-svg-icons";
+library.add(faStar, faPlusSquare, faMinusSquare);
 
 function App() {
   const [data, setData] = useState();
@@ -55,7 +59,6 @@ function App() {
                       <Section
                         cart={cart}
                         setCart={setCart}
-                        data={data}
                         categorie={categorie}
                         i={i}
                       />
