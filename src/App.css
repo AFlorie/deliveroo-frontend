@@ -1,38 +1,140 @@
-.App {
-  text-align: center;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f3f5f5;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+  background-color: #f3f5f5;
+}
+header {
+  background-color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header .container {
+  background-color: #fff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header img {
+  margin: 8px auto;
+  height: 41px;
+  width: auto;
+}
+.global {
+  background-color: #fff;
+}
+.info {
+  background-color: #fff;
+  margin-top: 1px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.info img {
+  width: 350px;
+  height: 223px;
+  border-radius: 5px;
+}
+
+h1 {
+  font-size: 32px;
+  line-height: 26.7px;
+  font-weight: 600;
+  margin: 50px auto;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+.info p {
+  color: #9da0a0;
+  font-size: 19px;
+  line-height: 28.8px;
+}
+
+.info .col-2 {
+  padding-top: 20px;
+  padding-left: 50px;
+}
+
+.section {
+  box-sizing: border-box;
+  padding: 15px;
+  width: 400px;
+  height: 160px;
+  margin: 10px 0;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.section img {
+  width: 130px;
+  height: 130px;
+  border-radius: 5px;
+  margin-left: 35px;
+}
+
+.section p {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 20.8px;
+  max-height: 38px;
+  overflow: hidden;
+  color: #808484;
+}
+
+.section span {
+  color: #808484;
+  margin-left: 10px;
+}
+
+.popular {
+  color: #ff9f3f;
+}
+
+.section i {
+  margin-right: 5px;
+}
+
+.hidden {
+  display: none;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.blockContainer {
+  flex: 1.43;
+}
+
+.basket {
+  flex: 0.57;
+}
+
+.grosBlock {
+  flex: 1;
+  padding-right: 30px;
+}
+
+.moyenBlock {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  flex-wrap: wrap;
 }
