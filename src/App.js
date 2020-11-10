@@ -16,6 +16,7 @@ library.add(faStar);
 function App() {
   const [data, setData] = useState();
   const [isLoading, setIsLoading] = useState(true);
+  const [cart, setCart] = useState([]);
   // console.log(data.restaurant.name);
 
   const fetchData = async () => {
@@ -48,11 +49,12 @@ function App() {
             <section className="blockContainer">
               {data.categories.slice(0, 6).map((categorie, i) => {
                 return (
-                  <div className="grosBlock">
+                  <div className="grosBlock" key={i}>
                     <h2>{categorie.name}</h2>
                     <div className="moyenBlock">
                       <Section
-                        key={i}
+                        cart={cart}
+                        setCart={setCart}
                         data={data}
                         categorie={categorie}
                         i={i}
@@ -62,7 +64,7 @@ function App() {
                 );
               })}
             </section>
-            <Panier />
+            <Panier cart={cart} />
           </div>
         </>
       )}

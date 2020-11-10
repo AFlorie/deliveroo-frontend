@@ -79,11 +79,21 @@ h3 {
   align-content: center;
 }
 
+.section:hover {
+  cursor: pointer;
+  box-shadow: 5px 10px 30px 5px lightgray;
+}
+
 .section img {
   width: 130px;
   height: 130px;
   border-radius: 5px;
   margin-left: 35px;
+  object-fit: cover;
+}
+
+.display {
+  display: flex;
 }
 
 .section p {
@@ -101,7 +111,7 @@ h3 {
   margin-left: 10px;
 }
 
-.popular {
+.section span.popular {
   color: #ff9f3f;
 }
 
@@ -123,10 +133,6 @@ h3 {
   flex: 1.43;
 }
 
-.basket {
-  flex: 0.57;
-}
-
 .grosBlock {
   flex: 1;
   padding-right: 30px;
@@ -137,4 +143,62 @@ h3 {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+}
+
+.basket {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex: 0.57;
+  width: 350px;
+  height: 188px;
+  background-color: #fff;
+}
+
+.basket button {
+  width: 330px;
+  height: 50px;
+  outline: none;
+  border-style: none;
+  font-family: inherit;
+  font-weight: 800;
+  font-size: inherit;
+  padding: 18px 50px;
+  border-radius: 5px;
+}
+
+.basket div {
+  color: #868a8a;
+  padding-bottom: 50px;
+}
+
+.fullcart {
+  background-color: #00cdbd;
+  color: white;
+}
+
+.emptycart {
+  background-color: #bac3c3;
+  color: #8b9a9b;
+}
+
+.basket .command {
+  display: flex;
+  justify-content: space-between;
+  color: #2e3333;
+  padding: 20px 0px;
+}
+
+.basket div.command span:nth-child(1) {
+  flex: 1;
+}
+.basket div.command span:nth-child(2) {
+  flex: 3;
+  margin-right: 30px;
+}
+
+.basket div.command span:nth-child(3) {
+  flex: 1;
 }
