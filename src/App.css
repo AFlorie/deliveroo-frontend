@@ -23,6 +23,7 @@ header img {
 }
 .global {
   background-color: #fff;
+  padding-bottom: 30px;
 }
 .info {
   background-color: #fff;
@@ -124,6 +125,7 @@ h3 {
 }
 
 .main {
+  margin-top: 30px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -146,6 +148,8 @@ h3 {
 }
 
 .basket {
+  margin-top: 20px;
+  height: auto;
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -153,8 +157,17 @@ h3 {
   align-items: center;
   flex: 0.57;
   width: 350px;
-  height: 188px;
   background-color: #fff;
+  border-radius: 5px;
+}
+
+.empty {
+  height: 188px;
+}
+
+.empty-text {
+  margin-top: 50px;
+  padding-bottom: 50px;
 }
 
 .basket button {
@@ -170,8 +183,8 @@ h3 {
 }
 
 .basket div {
+  width: 330px;
   color: #868a8a;
-  padding-bottom: 50px;
 }
 
 .fullcart {
@@ -191,7 +204,12 @@ h3 {
   padding: 20px 0px;
 }
 
-.basket div.command span:nth-child(1) {
+.basket hr {
+  border: 1px solid #d1d7d7;
+}
+
+.basket div.command span:nth-child(1),
+.basket div.command span:nth-child(3) {
   flex: 1;
 }
 .basket div.command span:nth-child(2) {
@@ -199,6 +217,9 @@ h3 {
   margin-right: 30px;
 }
 
-.basket div.command span:nth-child(3) {
-  flex: 1;
+.detail section {
+  color: #2e3333;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
 }
