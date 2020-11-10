@@ -52,7 +52,7 @@ const Section = ({ categorie, i, cart, setCart }) => {
                 populaire
               </span>
             </div>
-            <div className={!meal.popular ? "hidden" : "popular"}>
+            <div className={!meal.picture ? "hidden" : "popular"}>
               <img src={meal.picture} alt="" />
             </div>
           </article>
