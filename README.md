@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# Deliveroo Project
+![](https://img.shields.io/github/last-commit/AFlorie/deliveroo-frontend.svg?style=for-the-badge)
+![](https://img.shields.io/website?up_color=green&up_message=online&url=https://deliveroo-font.netlify.app/)
+![](https://res.cloudinary.com/drshresqr/image/upload/v1631696390/Git%20ReadMe%20Project%20Images/deliveroo_kvuyrp.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Overview
 
-## Available Scripts
+This project was part of the training course "fullstack developper" made by LeReacteur (https://www.lereacteur.io/).  
+It is in two parts (front-end :https://github.dev/AFlorie/deliveroo-frontend and back-end: https://github.dev/AFlorie/deliveroo-backend)  
+The goal of this project was learn how to create a shopping cart and how to add or remove items so I did not focus on accessibility, SEO or responsivness.  
 
-In the project directory, you can run:
+**Satus**  
+To be finished.  
+This website in not responsive.
 
-### `yarn start`
+**Online demo**  
+https://deliveroo-font.netlify.app/
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+**Architecture**  
+1 pages available : Main Page  
+    
+---
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Packages
 
-### `yarn test`
+- [Axios](https://github.com/axios/axios)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `yarn build`
+# Installation and usage
+  
+Be sure, you have installed all dependencies and applications to run React project on your computer : [Getting Started with React](https://reactjs.org/docs/getting-started.html).  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Running the project
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Clone this repository :
 
-### `yarn eject`
+```
+git clone https://github.com/AFlorie/deliveroo-frontend
+cd deliveroo-frontend
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Install packages :
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+yarn
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+When installation is complete, run it :
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```
+yarn start
+```
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+You're done !
