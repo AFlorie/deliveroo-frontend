@@ -13,7 +13,7 @@ The goal of this project was learn how to create a shopping cart and how to add 
 To be finished.  
 This website in not responsive.
 
-**Online demo**  
+**Online demo**  no more available due to heroku changes (no more free)
 https://deliveroo-font.netlify.app/
 
 **Architecture**  
